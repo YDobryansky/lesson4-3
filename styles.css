@@ -13,7 +13,7 @@ li:last-child span {
 }
 
 li:nth-child(even) span {
-  padding-left: 16px;
+  margin-left: 16px;
 }
 
 .paragraphs p:nth-child(odd) {
