@@ -1,3 +1,7 @@
 li {
   margin-bottom: 16px;
 }
+ol li {
+  background-color: green;
+  color: white;
+}
