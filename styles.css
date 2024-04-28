@@ -25,7 +25,16 @@ header {
     min-width: 300px;
 }
 
+@media screen and (max-width: 1249px) {
+    .article {
+        flex-basis: calc(33% - 16px);
+    }
 
+    .article:nth-child(4),
+    .article:nth-child(5) {
+        flex-basis: calc(50% - 16px);
+    }
+}
 
 @media screen and (min-width: 1250px) {
     .article {
