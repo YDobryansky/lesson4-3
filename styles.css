@@ -1,5 +1,7 @@
 .container {
             width: 50%;
+            box-sizing: border-box;
+            float: left;
         }
 
         .red {
