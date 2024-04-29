@@ -27,7 +27,7 @@ header {
 
 @media screen and (max-width: 1249px) {
     .article {
-        flex-basis: calc(33% - 16px);
+        flex-basis: calc(33.3% - 16px);
     }
 
     .article:nth-child(4),
