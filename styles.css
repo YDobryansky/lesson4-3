@@ -1,6 +1,34 @@
-iframe {
+.image {
     display: block;
-    margin: 100px auto;
-    width: 500px;
-    height: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image-container {
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.image-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: bisque;
+    opacity: 0.5;
+    box-sizing: border-box;
+    margin: auto;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 100px);
+}
+
+.image-button:hover {
+    opacity: 1;
+    cursor: pointer;
 }
