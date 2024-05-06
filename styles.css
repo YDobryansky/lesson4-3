@@ -36,7 +36,7 @@ header {
     }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (max-width: 950px) {
     .article {
         flex-basis: calc(33.3% - 16px);
     }
@@ -47,7 +47,7 @@ header {
     }
     
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
     .article {
         flex-basis: calc(50% - 16px);
     }
