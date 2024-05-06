@@ -4,7 +4,7 @@
     flex-direction: column;
     position: relative;
     border-bottom: 1px dotted black;
-    color: white;
+    color: black;
 }
 
 .tooltip {
