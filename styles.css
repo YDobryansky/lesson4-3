@@ -1,49 +1,41 @@
-* {
-    box-sizing: border-box;
-}
-
-.container {
-    margin: 32px;
-}
-
-.rect {
+.square {
+    position: absolute;
     width: 100px;
     height: 100px;
-    margin-bottom: 16px;
     background-color: coral;
-    opacity: 0.5;
-    text-align: center;
-    line-height: 100px;
-    transition-property: width, opacity;
-    transition-duration: 2s, 0.5s;
+    animation: move 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
 }
 
-.linear:hover {
-    transition-timing-function: linear;
-}
+@keyframes move {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: coral;
+    }
+    
+    25% {
+        left: 300px;
+        top: 0;
+        background-color: cornflowerblue;
+    }
 
-.ease:hover {
-    transition-timing-function: ease;
-}
+    50% {
+        left: 300px;
+        top: 300px;
+        background-color: aqua;
+    }
 
-.ease-in:hover {
-    transition-timing-function: ease-in;
-}
+    75% {
+        left: 0;
+        top: 300px;
+        background-color: yellowgreen;
+    }
 
-.ease-out:hover {
-    transition-timing-function: ease-out;
-}
-
-.ease-in-out:hover {
-    transition-timing-function: ease-in-out;
-
-}
-
-.linear:hover,
-.ease:hover,
-.ease-in:hover,
-.ease-out:hover,
-.ease-in-out:hover {
-    width: 100%;
-    opacity: 1;
+    100% {
+        left: 0;
+        top: 0;
+        background-color: coral;
+    }
 }
