@@ -1,15 +1,59 @@
-table {
+* {
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+div {
+  overflow-x: auto;
+}
+
+table {
   width: 500px;
   margin: 16px;
-}
-
-table, th, td {
-  border: 1px solid black;
   border-collapse: collapse;
+  border: 1px solid black;
 }
 
-td, th {
+caption {
+  margin-bottom: 8px;
+}
+
+th, td {
   padding: 4px;
   text-align: right;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+tr {
+  height: 40px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+thead {
+  background-color: aqua;
+}
+
+tfoot {
+  font-weight: 700;
+}
+
+tr td:nth-child(even) {
+  background-color: #eee;
+
+}
+
+tr td:nth-child(odd) {
+  background-color: #fff;
 }
