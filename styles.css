@@ -24,6 +24,7 @@ header {
     flex-basis: calc(100% - 16px);
     min-width: 300px;
 }
+p{margin:0}
 
 @media screen and (min-width: 500px) {
     .article {
