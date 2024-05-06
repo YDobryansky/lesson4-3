@@ -1,42 +1,11 @@
-.nav {
+main {
     display: flex;
-    background-color: #ff7f50;
-    flex: 1;
-    min-height: 200px;
 }
 
-.product-list {
-    display: flex;
-    background-color: #006400;
-    flex: 1;
-    min-height: 200px;
+img {
+    max-width: 100%;
 }
 
-.news {
-    display: flex;
-    flex: 1;
-    background-color: #0ff;
-    min-height: 200px;
-}
-
-span {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: lowercase;
-    background-color: #faebd7;
-    padding: 8px;
+picture {
     margin: auto;
-    border-radius: 4px;
-}
-
-@media screen and (min-width: 600px) {
-    .products {
-        display: flex;
-        flex: 2;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .content {
-        display: flex;
-    }
 }
