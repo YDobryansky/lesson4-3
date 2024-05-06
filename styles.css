@@ -1,21 +1,13 @@
-* {
-  box-sizing: border-box;
+div div:nth-child(1) {
+  display: none;
 }
 
-header {
-  display: flex;
-  justify-content: center;
+div div:nth-child(2) {
+  visibility: hidden;
 }
 
-.article {
-  margin: 8px;
-  padding: 16px;
-  background-color: bisque;
-  flex-basis: 300px;
-  flex-grow: 1;
-}
-
-.articles-list {
-  display: flex;
-  flex-wrap: wrap;
+div>div {
+  width: 100px;
+  height: 100px;
+  background: coral;
 }
