@@ -3,18 +3,45 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Images</title>
+    <title>Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
- </head>
+    <style>
+        /* Добавлен стиль для внешнего отступа 16px */
+        .form-control {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
 
 <body>
-    <div class="image-container">
-        <img class="image" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/hw1/big.jpeg"
-            alt="Forest" />
-        <span class="image-button">Later I'll do something</span>
-    </div>
+    <form>
+        <div class="form-control">
+            <input type="text" id="lastName" name="lastName" value="Emerson">
+        </div>
+        <div class="form-control">
+            <input type="number" id="age" name="age" value="17">
+        </div>
+        <div class="form-control">
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">Accept terms and conditions</label>
+        </div>
+        <div class="form-control choose-gender">
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="secret">
+            <label for="secret">Secret</label>
+        </div>
+        <div class="form-control">
+            <textarea id="description" name="description" placeholder="Write description..."></textarea>
+        </div>
+        <div class="form-control">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 
 </html>
