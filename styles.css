@@ -1,9 +1,33 @@
-.gallery {
-    display: flex;
-    overflow-x: auto;
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
-.thumb {
-    margin: 8px;
-    cursor: all-scroll;
+section {
+    margin: 32px;
+}
+
+h1 {
+    word-spacing: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+b {
+    letter-spacing: 3px;
+    font-size: 24px;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 28px;
+}
+
+em {
+    color: gray;
 }
