@@ -1,20 +1,9 @@
-.text {
-    margin: 16px;
-    display: inline-flex;
-    flex-direction: column;
-    position: relative;
-    border-bottom: 1px dotted black;
-    color: black;
+.gallery {
+    display: flex;
+    overflow-x: auto;
 }
 
-.tooltip {
-    display: inline-block;
-    background-color: grey;
-    position: absolute;
-    bottom: -40px;
-    padding: 8px;
-    border-radius: 4px;
-    color:white;
-    visibility: hidden;
+.thumb {
+    margin: 8px;
+    cursor: all-scroll;
 }
-.text:hover .tooltip {visibility: visible;}
