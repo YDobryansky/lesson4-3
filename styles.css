@@ -34,6 +34,9 @@ header {
     .article:last-child {
         flex-basis: 100%;
     }
+    .article>p{
+        margin:0
+    }
 }
 
 @media screen and (min-width: 950px) {
@@ -45,9 +48,7 @@ header {
     .article:nth-child(5) {
         flex-basis: calc(50% - 16px);
     }
-    .article>p{
-        margin:0
-    }
+    
 }
 
 @media screen and (min-width: 1250px) {
