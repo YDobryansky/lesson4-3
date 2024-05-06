@@ -3,41 +3,17 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Form 2</title>
+    <title>Checkbox</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <form>
-        <div class="form-control">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" value="Emerson" readonly>
-        </div>
-        <div class="form-control">
-            <label for="age">Age</label>
-            <input type="number" id="age" name="age" value="17" min="3" max="10" required>
-        </div>
-        <div class="form-control">
-            <input type="checkbox" id="agree" name="agree" disabled>
-            <label>Accept terms and conditions</label>
-        </div>
-        <div class="form-control">
-            <input type="radio" name="gender" id="male" class="choose-gender">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="female" class="choose-gender">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="secret" class="choose-gender" checked>
-            <label for="secret">Secret</label>
-        </div>
-        <div class="form-control">
-            <textarea id="description" maxlength="10" name="description" placeholder="Write description..."></textarea>
-        </div>
-        <div class="form-control">
-            <button type="submit">Submit</button>
-        </div>
-    </form>
+    <label class="checkbox" for="agree">Checkbox
+        <input type="checkbox" id="agree" />
+        <span class="checkmark"></span>
+    </label>
 </body>
 
 </html>
