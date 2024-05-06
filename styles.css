@@ -9,9 +9,10 @@
 
 .tooltip {
     display: inline-block;
-    background-color: gray;
+    background-color: grey;
     position: absolute;
     bottom: -40px;
     padding: 8px;
     border-radius: 4px;
+    color:white;
 }
