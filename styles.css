@@ -1,24 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
 .container {
-    display: flex;
-    justify-content: space-around;
+    margin: 32px;
 }
 
-.fa-battery-full {
-    font-size: 16px;
+.rect {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+    background-color: coral;
+    opacity: 0.5;
+    text-align: center;
+    line-height: 100px;
+    transition-property: width, opacity;
+    transition-duration: 2s, 0.5s;
 }
 
-.fa-battery-three-quarters {
-    font-size: 32px;
+.linear:hover {
+    transition-timing-function: linear;
 }
 
-.fa-battery-half {
-    font-size: 64px;
+.ease:hover {
+    transition-timing-function: ease;
 }
 
-.fa-battery-quarter {
-    font-size: 128px;
+.ease-in:hover {
+    transition-timing-function: ease-in;
 }
 
-.fa-battery-empty {
-    font-size: 256px;
+.ease-out:hover {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out:hover {
+    transition-timing-function: ease-in-out;
+
+}
+
+.linear:hover,
+.ease:hover,
+.ease-in:hover,
+.ease-out:hover,
+.ease-in-out:hover {
+    width: 100%;
+    opacity: 1;
 }
