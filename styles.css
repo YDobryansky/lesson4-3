@@ -1,41 +1,53 @@
-.square {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: coral;
-    animation: move 4s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
+html {
+    font-family: monospace;
 }
 
-@keyframes move {
-    0% {
+.spinner {
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.spinner-text {
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    animation: blinking 2s linear infinite;
+}
+
+.rect {
+    position: relative;
+    background-color: black;
+    width: 10px;
+    height: 4px;
+    border-radius: 2px;
+    animation: moving 2s linear alternate infinite,
+               blinking 2s linear infinite;
+}
+
+@keyframes moving {
+    from {
         left: 0;
-        top: 0;
-        background-color: coral;
+        opacity: 1;
     }
-    
-    25% {
-        left: 300px;
-        top: 0;
-        background-color: cornflowerblue;
+
+    to {
+        left: 70px;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
     }
 
     50% {
-        left: 300px;
-        top: 300px;
-        background-color: aqua;
-    }
-
-    75% {
-        left: 0;
-        top: 300px;
-        background-color: yellowgreen;
+        opacity: 1;
     }
 
     100% {
-        left: 0;
-        top: 0;
-        background-color: coral;
+        opacity: 0;
     }
 }
