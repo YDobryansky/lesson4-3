@@ -1,17 +1,26 @@
-import { rules } from 'eslint-config-airbnb-base';
-import getSum, { getSquaredArray, getOddNumbers } from './calculator';
+import { calc } from './calculator.js';
 
-it('should get square numbers', () => {
-  const result = getSquaredArray([1, 2, 3]);
-  expect(result).toEqual([1, 4, 9]);
+it('sum of numbers', () => {
+  const sum = calc('2 + 2');
+  expect(sum).toEqual('2 + 2 = 4');
 });
 
-it('shoud keep odd number only', () => {
-  const result = getOddNumbers([1, 2, 3, 4, 5]);
-  expect(result).toEqual([1, 3, 5]);
+it('dif of numbers', () => {
+  const dif = calc('2 - 1');
+  expect(dif).toEqual('2 - 1 = 1');
 });
 
-it('get sum of numbers', () => {
-  const result = getSum(8, 4);
-  expect(result).toEqual(12);
+it('multiplication of numbers', () => {
+  const multiplication = calc('3 * 3');
+  expect(multiplication).toEqual('3 * 3 = 9');
+});
+
+it('division of numbers', () => {
+  const division = calc('15 / 3');
+  expect(division).toEqual('15 / 3 = 5');
+});
+
+it('if its not a string', () => {
+  const result = calc(2525);
+  expect(result).toEqual(null);
 });
