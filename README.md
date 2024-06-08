@@ -1,6 +1,6 @@
 # Price Cards
 
-### [Site link]([[https:/ydobryansky.github.io/lesson4-3/])
+### [Site link]([https:/ydobryansky.github.io/lesson4-3/])
 
 ### The tech stack is:
 
