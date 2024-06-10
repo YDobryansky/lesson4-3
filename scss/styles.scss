@@ -1,0 +1,30 @@
+@import './_variables';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: auto;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: var(--main-font-family);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    height: 100vh;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+@import './elements/_price-card';
+@import './elements/_checkmark';
+@import './elements/_popular';
+
+/*# sourceMappingURL=styles.css.map */

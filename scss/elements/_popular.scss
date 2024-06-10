@@ -1,0 +1,22 @@
+.popular-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -35px;
+    top: -18px;
+    height: 122px;
+    width: 150px;
+
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--marker-bg-color);
+        font-size: 14px;
+        font-weight: bold;
+        height: 25px;
+        width: 147px;
+        transform: rotate(45deg);
+    }
+}
