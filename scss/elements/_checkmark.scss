@@ -1,19 +1,18 @@
 .checkmark {
-    display: inline-block;
-    margin: 0 22px;
-    width: 15px;
-    height: 13px;
+  display: inline-block;
+  margin: 0 22px;
+  width: 15px;
+  height: 13px;
 
+  &--green {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
+  }
 
-    &__green {
-        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
-    }
+  &--blue {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
+  }
 
-    &__blue {
-        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
-    }
-
-    &__orange {
-        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
-    }
+  &--orange {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+  }
 }
