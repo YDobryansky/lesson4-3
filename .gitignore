@@ -23,7 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-
+css/*
 *.zip
 *.rar
 package.json
