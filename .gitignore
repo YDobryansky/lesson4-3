@@ -11,7 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-.eslintrc
 
 # Editor directories and files
 .vscode/*
@@ -27,3 +26,5 @@ dist-ssr
 
 *.zip
 *.rar
+package.json
+package-lock.json
