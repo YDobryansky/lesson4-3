@@ -29,9 +29,20 @@
   }
 
   &__price {
-    // margin-top: 33px;
     height: 105px;
     display: flex;
+    /* Modifiers */
+    &--green {
+      background-color: var(--green-color);
+    }
+  
+    &--blue {
+      background-color: var(--blue-color);
+    }
+  
+    &--orange {
+      background-color: var(--orange-color);
+    }
   }
 
   &__euro {
@@ -77,34 +88,19 @@
     margin: 39px auto 0;
     border: none;
     border-radius: 20px;
-    width: 155px;
-    height: 40px;
     cursor: pointer;
     color: inherit;
-  }
-
-  /* Modifiers */
-  &__price--green {
-    background-color: var(--green-color);
-  }
-
-  &__price--blue {
-    background-color: var(--blue-color);
-  }
-
-  &__price--orange {
-    background-color: var(--orange-color);
-  }
-
-  &__order-btn--green {
-    background-color: var(--green-color);
-  }
-
-  &__order-btn--blue {
-    background-color: var(--blue-color);
-  }
-
-  &__order-btn--orange {
-    background-color: var(--orange-color);
+    
+    &--green {
+      background-color: var(--green-color);
+    }
+  
+    &--blue {
+      background-color: var(--blue-color);
+    }
+  
+    &--orange {
+      background-color: var(--orange-color);
+    }
   }
 }
